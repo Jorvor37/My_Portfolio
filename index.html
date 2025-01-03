@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kongphop Kayoonvichien - Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume" class="resume-button">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Hi, my name is</h1>
+        <h2>Kongphop Kayoonvichien.</h2>
+        <h3>Aspiring Software Developer | AI Enthusiast</h3>
+        <p>💻 Computer Engineering Student at Mahidol University International College (MUIC)</p>
+        <button class="cta-button">Get In Touch</button>
+    </div>
+
+    <aside class="sidebar">
+        <div class="social-links">
+            <a href="https://github.com/Jorvor37" target="_blank" rel="noopener noreferrer">
+                <img src="logos/github.svg" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/Jorvor37/" target="_blank" rel="noopener noreferrer">
+                <img src="logos/linkedin.svg" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/k_kongphopp/" target="_blank" rel="noopener noreferrer">
+                <img src="logos/instagram.svg" alt="GitHub" class="social-icon">
+            </a>
+            <div class="vertical-line"></div>
+        </div>
+        <div class="email" onclick="copyEmail()">kongphop.kayoonvichien@gmail.com</div>
+    </aside>
+    
+    <div id="notification" class="notification"></div>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate and driven individual currently pursuing a Bachelor’s degree in Computer Engineering at Mahidol University International College (MUIC),
+                 where I started my academic journey in October 2023. My interest in coding began in 2021, and since then, I have developed skills in C, C++, JavaScript,
+                  and HTML, with a focus on software development, AI training, and BOT creation.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Project leader for a general engineering senior project BCCxKMUTT</p>
+            <br>
+            <p>Deputy head of water sales at the school fair held on August 20, 2022</p>
+        </section>
+
+        <section id="work">
+            <h2>My Work</h2>
+            <div class="projects-grid">
+                <!-- Project Box 1 -->
+                <div class="project-box">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of the project.</p>
+                    <a href="https://example.com/project1" target="_blank" class="view-project">View Project</a>
+                </div>
+                <!-- Project Box 2 -->
+                <div class="project-box">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of the project.</p>
+                    <a href="https://example.com/project2" target="_blank" class="view-project">View Project</a>
+                </div>
+                <!-- Project Box 3 -->
+                <div class="project-box">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of the project.</p>
+                    <a href="https://example.com/project3" target="_blank" class="view-project">View Project</a>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kongphop Kayoonvichien. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
