@@ -35,23 +35,67 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--text-dark);
     font-size: 0.9rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease, padding 0.3s ease;
+    padding: 0.5rem 0.3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-nav ul li a:hover, .resume-button {
+nav ul li a:hover {
     color: var(--accent-green);
-    border: 1px solid var(--accent-green);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-transform: uppercase;
+    background-color: transparent;
     font-weight: bold;
 }
+
+.resume-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    border: 1px solid var(--accent-green);
+    border-radius: 5px;
+    color: var(--accent-green);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+}
+
+.resume-button span {
+    transition: opacity 0.3s ease;
+}
+
+.resume-button:hover {
+    background: url('../logos/download_icon.svg') no-repeat center center;
+    background-size: 24px;
+    border: 1px solid transparent;
+    color: transparent;
+}
+
+.resume-button:hover span {
+    opacity: 0;
+}
+
 
 .hero {
     height: 100vh;
