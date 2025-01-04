@@ -77,12 +77,8 @@ nav ul li a:hover {
     text-align: center;
     text-decoration: none;
     background-color: transparent;
-    transition: background 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
     overflow: hidden;
-}
-
-.resume-button span {
-    transition: opacity 0.3s ease;
 }
 
 .resume-button:hover {
@@ -90,11 +86,17 @@ nav ul li a:hover {
     background-size: 24px;
     border: 1px solid transparent;
     color: transparent;
+    filter: invert(62%) sepia(82%) saturate(1550%) hue-rotate(120deg) brightness(95%) contrast(91%); /* Change color here */
+}
+
+.resume-button span {
+    transition: opacity 0.3s ease;
 }
 
 .resume-button:hover span {
     opacity: 0;
 }
+
 
 
 .hero {
