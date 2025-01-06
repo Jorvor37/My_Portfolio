@@ -1,21 +1,26 @@
+console.log('JavaScript file loaded');
+
 document.addEventListener('DOMContentLoaded', () => {
     // Form submission handling
     const form = document.querySelector('form');
 
+    //EmailJS
+    emailjs.init('UTfZBOAmnYlb5RdG0');
+    console.log(emailjs);
     form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const name = form.querySelector('input[type="text"]').value;
-        const email = form.querySelector('input[type="email"]').value;
-        const message = form.querySelector('textarea').value;
-
-        if (name && email && message) {
-            showNotification('Thank you for your message! I will get back to you soon.');
-            form.reset();
-        } else {
-            showNotification('Please fill in all fields');
-        }
+        e.preventDefault(); // Prevent the default form submission
+    
+        emailjs.sendForm('service_o1ztndp', 'template_ksbxniy', form)
+            .then(() => {
+                showNotification('Message sent successfully!');
+                form.reset(); // Clear the form fields
+            })
+            .catch((error) => {
+                showNotification('Failed to send message. Please try again later.');
+                console.error('EmailJS Error:', error);
+            });
     });
+    
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

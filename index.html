@@ -93,12 +93,13 @@
 
         <section id="contact">
             <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <form id="contact-form">
+                <input type="text" name="from_name" placeholder="Your Name" required>
+                <input type="email" name="reply_to" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
+            
         </section>
     </main>
 
@@ -106,6 +107,7 @@
         <p>&copy; 2025 Kongphop Kayoonvichien. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!--EmailJS-->
+    <script src="scripts/main.js"></script>
 </body>
 </html>
