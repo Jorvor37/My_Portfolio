@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(emailjs);
     form.addEventListener('submit', (e) => {
         e.preventDefault(); // Prevent the default form submission
+        console.log("Form submitted!");
     
         emailjs.sendForm('service_o1ztndp', 'template_ksbxniy', form)
             .then(() => {
