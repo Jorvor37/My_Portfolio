@@ -1,8 +1,9 @@
 <!--TODOLIST: 
 -make professional Resume to be able to download
--Get In touch btn
--Finish Contact me function to actual send me automate email or else
--MUIC minor finals projects, fund com, adv.com new website page
+-Projects
+    University subjects final projects, fund com, adv.com
+    Trading bot x AI
+    
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kongphop Kayoonvichien - Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
@@ -30,7 +31,7 @@
         <h2>Kongphop Kayoonvichien.</h2>
         <h3>Aspiring Software Developer | AI Enthusiast</h3>
         <p>💻 Computer Engineering Student at Mahidol University International College (MUIC)</p>
-        <button class="cta-button">Get In Touch</button>
+        <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Get In Touch</button>
     </div>
 
     <aside class="sidebar">
@@ -71,9 +72,9 @@
             <div class="projects-grid">
                 <!-- Project Box 1 -->
                 <div class="project-box">
-                    <h3>Project Title 1</h3>
-                    <p>A brief description of the project.</p>
-                    <a href="https://example.com/project1" target="_blank" class="view-project">View Project</a>
+                    <h3>MUIC Dev Vault</h3>
+                    <p>Is a curated collection of all final programming projects completed during my journey at MUIC, Mahidol University International College. This box represents the milestones of my academic growth, creative problem-solving, and technical achievements.”</p>
+                    <a href="./projects/project1.html" target="_blank" class="view-project">View Project</a>
                 </div>
                 <!-- Project Box 2 -->
                 <div class="project-box">
@@ -108,6 +109,6 @@
     </footer>
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!--EmailJS-->
-    <script src="scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
