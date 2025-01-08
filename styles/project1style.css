@@ -50,11 +50,12 @@
 .project-content {
     padding: 3rem 2rem;
     margin: 0 auto;
-    background: var(--light-bg); /* Use root color for background */
-    border-radius: 12px; /* Smooth corners */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Add depth */
+    background: var(--light-bg);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     max-width: 900px;
     color: var(--text-light);
+    margin-bottom: 5rem;
 }
 
 .project-content h2 {
@@ -85,7 +86,7 @@
 
 .project-content p {
     font-size: 1.2rem;
-    color: var(--text-dark); /* Lighter color for readability */
+    color: var(--text-dark);
     margin-bottom: 2rem;
     line-height: 1.8;
 }
@@ -110,7 +111,7 @@
     width: 100%;
     border-radius: 8px;
     margin: 2rem 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Subtle shadow for better visibility */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 /* Links and Buttons */
@@ -154,8 +155,8 @@ ul li a:hover {
 
 /* Footer (Lighter) */
 footer {
-    background: var(--light-bg); /* Use lighter background */
-    color: var(--text-dark); /* Slightly muted text */
+    background: var(--light-bg); 
+    color: var(--text-dark);
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
