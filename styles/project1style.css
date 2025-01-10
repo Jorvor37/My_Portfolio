@@ -84,6 +84,16 @@
     font-weight: bold;
 }
 
+.project-content h5 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(160deg, var(--accent-green), var(--text-lighter));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
 .project-content p {
     font-size: 1.2rem;
     color: var(--text-dark);
@@ -106,6 +116,8 @@
 .project-content li strong {
     color: var(--accent-green);
 }
+
+
 
 .project-image img {
     width: 100%;

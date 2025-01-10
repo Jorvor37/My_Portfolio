@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUIC Dev Vault - Project 1</title>
+    <title>Small Steps Hub - Project 2</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/project1style.css">
 </head>
-
 
 <body>
     <header>
@@ -26,25 +25,75 @@
     <aside class="sidebar">
         <div class="social-links">
             <a href="../index.html#work" rel="noopener noreferrer">
-                <img src="../logos/home2.svg" alt="HomeIcon" class="social-icon" >
+                <img src="../logos/home2.svg" alt="HomeIcon" class="social-icon">
             </a>
         </div>
     </aside>
 
     <main>
-        <!-- Header -->
+        <!-- Header Section -->
         <div class="title-container">
             <h1>Small Steps Hub</h1>
             <h2>Weekly Programming Project Showcase</h2>
             <div class="highlight-line"></div>
-            <p>Small Step Hub is a collection of small weekly coding projects where I practice, explore new ideas, and sharpen my skills. Each project marks a step forward in my coding journey.</p>
+            <p>A growing collection of small projects, helping me to learn and master programming concepts one step at a time.</p>
         </div>
-    </main>
 
-    <script src="./scripts/main.js"></script>
+        <!-- Categorization Section -->
+        <section id="categories">
+            <h2>Browse by Categories</h2>
+            <div class="projects-grid">
+                <!-- Programming Languages -->
+                <div class="project-box">
+                    <h3>By Programming Language</h3>
+                    <p>Explore projects grouped by languages like C++, Python, JavaScript, and more.</p>
+                    <a href="./catagories/languages.html" class="view-project">Explore</a>
+                </div>
+                <!-- Level of Advancement -->
+                <div class="project-box">
+                    <h3>By Level of Advancement</h3>
+                    <p>Projects organized into beginner, intermediate, and advanced levels.</p>
+                    <a href="./categories/advancement.html" class="view-project">Explore</a>
+                </div>
+                <!-- Programming Concepts -->
+                <div class="project-box">
+                    <h3>By Programming Concepts</h3>
+                    <p>Discover projects focused on OOP, algorithms, data structures, and more.</p>
+                    <a href="./categories/concepts.html" class="view-project">Explore</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Yearlt Highlight Section -->
+        <section id="yearly-highlight">
+            <h2>Yearly Highlights</h2>
+            <div class="project-content">
+                <h3>Project of the Year</h3>
+                <p>Check out this week’s spotlight project: <strong>"Recursive Maze Solver"</strong>.</p>
+                <ul>
+                    <li><strong>Programming Language:</strong> Python</li>
+                    <li><strong>Key Concepts:</strong> Recursion, Depth-First Search</li>
+                    <li><strong>Objective:</strong> Solve a maze using recursive algorithms and visualize the process.</li>
+                    <li><strong>Repository:</strong> <a href="https://github.com/example/Recursive-Maze-Solver" target="_blank">GitHub Link</a></li>
+                </ul>
+                <div class="project-image">
+                    <img src="../images/" alt="Project Name" style="width:80%; max-width:450px; border-radius:8px;">
+                </div>
+                <a href="link" class="view-project">View Full Details</a>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="get-involved">
+            <h2>Get Involved</h2>
+            <p>Have a project idea or want to share your own? Submit your projects to be featured here!</p>
+            <a href="../submit-project.html" class="cta-button">Submit a Project</a>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Kongphop Kayoonvichien. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
