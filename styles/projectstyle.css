@@ -10,9 +10,7 @@
 /* Full-Width Title Section*/
 .title-container {
     padding: 4rem 2rem;
-    background: linear-gradient(to bottom, var(--dark-bg), #0e1b32);
     text-align: center;
-    color: var(--text-light);
 }
 
 .title-container h1 {
@@ -236,7 +234,7 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-/* Repository Link */
+/* Visit  Link */
 .weekly-project-show a {
     font-size: 1rem;
     color: var(--accent-green);

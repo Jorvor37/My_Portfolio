@@ -1,0 +1,142 @@
+/* Main Background Container */
+body {
+    position: relative;
+    background-color: var(--dark-bg);
+    overflow: hidden; /* Prevents scrolling when the background animates */
+}
+
+/* Main Title Section*/
+.title-container {
+    padding: 2rem 2rem;
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    
+}
+
+.title-container h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-green);
+    margin-bottom: 0.5rem;
+}
+
+.title-container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-lighter);
+    margin-bottom: 1rem;
+}
+
+.title-container p {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-top: 1.5rem;
+    line-height: 1.8;
+}
+
+.highlight-line {
+    width: 100px;
+    height: 4px;
+    background: var(--accent-green);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+/* Repository Link Container */
+.repository-link {
+    margin-top: 2rem;
+}
+
+.repository-link a {
+    font-size: 1rem;
+    color: var(--accent-green);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-green);
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.repository-link a:hover {
+    background-color: var(--accent-green);
+    color: var(--dark-bg);
+}
+
+/* Concept Box Section */
+.concept-box {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.concept-box li {
+    background: var(--light-bg); /* Subtle background */
+    border-radius: 12px; /* Rounded edges */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.concept-box li:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+}
+
+/* Heading for Each Concept */
+.concept-box h3 {
+    font-size: 1.8rem;
+    color: var(--accent-green);
+    margin-bottom: 0.5rem;
+}
+
+/* Concept Description */
+.concept-box p {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Project Links */
+.project-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-links li {
+    margin: 1rem 0;
+}
+
+.project-links a {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+    color: var(--accent-green);
+}
+
+/* Back Button */
+.back-button {
+    font-size: 1rem;
+    color: var(--accent-green);
+    text-decoration: none;
+    border: 1px solid var(--accent-green);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: var(--accent-green);
+    color: var(--dark-bg);
+}
