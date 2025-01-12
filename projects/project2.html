@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Small Steps Hub - Project 2</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/project1style.css">
+    <link rel="stylesheet" href="../styles/projectstyle.css">
 </head>
 
 <body>
@@ -39,32 +39,17 @@
             <p>A growing collection of small projects, helping me to learn and master programming concepts one step at a time.</p>
         </div>
 
-        <!-- Categorization Section -->
-        <section id="categories">
-            <h2>Browse by Categories</h2>
-            <div class="projects-grid">
-                <!-- Programming Languages -->
-                <div class="project-box">
-                    <h3>By Programming Language</h3>
-                    <p>Explore projects grouped by languages like C++, Python, JavaScript, and more.</p>
-                    <a href="./catagories/languages.html" class="view-project">Explore</a>
-                </div>
-                <!-- Level of Advancement -->
-                <div class="project-box">
-                    <h3>By Level of Advancement</h3>
-                    <p>Projects organized into beginner, intermediate, and advanced levels.</p>
-                    <a href="./categories/advancement.html" class="view-project">Explore</a>
-                </div>
-                <!-- Programming Concepts -->
-                <div class="project-box">
-                    <h3>By Programming Concepts</h3>
-                    <p>Discover projects focused on OOP, algorithms, data structures, and more.</p>
-                    <a href="./categories/concepts.html" class="view-project">Explore</a>
-                </div>
-            </div>
-        </section>
+        <main>
+            <ul class="weekly-project-show">
+                <li>
+                    <h3>C Learning Playground</h3>
+                    <p>a collection of basic C programs designed for learning fundamental programming concepts. The programs cover a wide range of topics, including data structures, algorithms, string manipulation, loops, pointers, and basic mathematical operations. It serves as a foundational resource for beginners aiming to grasp the essentials of programming in C.</p>
+                    <a href="./project2/C-Learning-Playground.html">Visit Page</a>
+                </li>
+            </ul>
+        </main>
 
-        <!-- Yearlt Highlight Section -->
+        <!-- Yearly Highlight Section -->
         <section id="yearly-highlight">
             <h2>Yearly Highlights</h2>
             <div class="project-content">
@@ -89,6 +74,13 @@
             <p>Have a project idea or want to share your own? Submit your projects to be featured here!</p>
             <a href="../submit-project.html" class="cta-button">Submit a Project</a>
         </section>
+
+        <!-- Back Button -->
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="previous-page.html" class="back-button" style="text-decoration: none; color: var(--accent-green); font-size: 1rem; border: 1px solid var(--accent-green); padding: 0.5rem 1rem; border-radius: 5px; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease;">
+                Back to Previous Page
+            </a>
+        </div>
     </main>
 
     <footer>
