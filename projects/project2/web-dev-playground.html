@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/subproject2style.css">
+    <style>
+        body, html {
+            min-height: 100%;
+            margin: 0;
+            overflow-y: auto;
+        }
+
+        .repository-link {
+            margin-top: 1.5rem;
+        }
+
+        .repository-link a {
+            font-size: 1rem;
+            color: var(--accent-green);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent-green);
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .repository-link a:hover {
+            background-color: var(--accent-green);
+            color: var(--dark-bg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="social-links">
+            <a href="../../index.html#work" rel="noopener noreferrer">
+                <img src="../../logos/home2.svg" alt="HomeIcon" class="social-icon">
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Title Section -->
+    <div class="title-container">
+        <h1>Small Steps Hub</h1>
+        <h2>Web Dev Playground</h2>
+        <p>A comprehensive learning hub for aspiring web developers, featuring interactive examples and exercises in JavaScript, CSS, and HTML. This page covers foundational topics and programming syntax</p>
+        <div class="highlight-line"></div>
+    </div>
+
+    <!-- Project Showcase Section -->
+     <main>
+        <ul class="concept-box">
+            <!--CALCULATOR-->
+            <li>
+                <h1>Calculator</h1>
+                <p> Standard simple calculator inspired by Apple calculator user interface</p>
+                <p><strong>Programming Language Used:</strong> HTML & CSS & JS</p>
+                <p><strong>Key Features:</strong> Working calculator</p>
+                <div class="project-image">
+                    <img src="../../images/project2-image/Calculator.png" alt="User interface of calculator program" style="width:60%; max-width: 300px; border-radius: 8px;">
+                </div>
+                <h3>What I Learned</h3>
+                <p>I have learned how to use the built-in JavaScript function called "calculate" and created another function named "appendToDisplay" to implement it as a button.</p>
+                <div class="repository-link">
+                    <a href="https://github.com/Jorvor37/2024-08-22-Calculator" target="_blank">Visit Repository</a>
+                </div>
+            </li>
+
+            <!--STOP WATCH-->
+            <li>
+                <h1>Stop Watch</h1>
+                <p>Simple stop watch design with start stop and reset button</p>
+                <p><strong>Programming Language Used:</strong> HTML & CSS & JS</p>
+                <p><strong>Key Features:</strong> Stop watch use to count time</p>
+                <div class="project-image">
+                    <img src="../../images/project2-image/stop-watch.png" alt="User interface of stop watch program" style="width:80%; max-width: 350px; border-radius: 8px;">
+                </div>
+                <h3>What I Learned</h3>
+                <p>I implement a stopwatch with start, stop, and reset functionalities. I uses setInterval() funtion to update the elapsed time every 10 milliseconds and dynamically formats the output into hours, minutes, seconds, and milliseconds.</p>
+                <div class="repository-link">
+                    <a href="https://github.com/Jorvor37/2024-08-23-StopWatch" target="_blank">Visit Repository</a>
+                </div>
+            </li>
+
+            <!--TO DO LISTS-->
+            <li>
+                <h1>To Do Lists</h1>
+                <p>Simple to do lists program with create and delete button</p>
+                <p><strong>Programming Language Used:</strong> HTML & CSS & JS</p>
+                <p><strong>Key Features:</strong> Stop watch use to count time</p>
+                <div class="project-image">
+                    <img src="../../images/project2-image/to-do-list.png" alt="User interface of to do list program" style="width:60%; max-width: 350px; border-radius: 8px;">
+                </div>
+                <h3>What I Learned</h3>
+                <p>Dynamic DOM manipulation allows me to create and modify web elements directly with JavaScript. In my code, I used document.createElement() to dynamically generate elements like "div" "input", and "button", customizing their properties and organizing them into a hierarchy with appendChild(). This enables interactive and dynamic page updates in response to user actions.</p>
+                <p>Event handling links user actions to specific functions. In my project, the onclick event for the delete button triggers a function to remove the task's container dynamically (taskDiv.remove()), making the application responsive and interactive. This demonstrates how events enable seamless user interaction with web applications</p>
+                <div class="repository-link">
+                    <a href="https://github.com/Jorvor37/2024-08-24-simpleToDoListApplication" target="_blank">Visit Repository</a>
+                </div>
+            </li>
+
+            <!--COUNT DOWN TIMER-->
+            <li>
+                <h1>CountDown Timer</h1>
+                <p>A simple program that use to set and countdown time. I've reversed engineer the count down program, copy and modify some codes to build this project.</p>
+                <p><strong>Programming Language Used:</strong> HTML & CSS & JS</p>
+                <p><strong>Key Features:</strong> Allow user to insert nunmber in decending order from hour, read those number and start countdown</p>
+                <div class="project-image">
+                    <img src="../../images/project2-image/count-down-timer.png" alt="Logo of Siamese Shores game" style="width:80%; max-width: 350px; border-radius: 8px;">
+                </div>
+                <h3>What I Learned</h3>
+                <p>Timer Control with Dynamic Updates: The code demonstrates how to build a functional countdown timer using JavaScript. It calculates the total countdown duration from user input and dynamically updates the timer display every 0.1 seconds using setInterval(). The update() function ensures accurate real-time formatting of hours, minutes, and seconds, allowing for smooth transitions and precise time tracking.</p>
+                <p>Input Validation and User Interaction: The validateInput() function ensures user-entered values for hours, minutes, and seconds remain within valid ranges (e.g., hours ≤ 24). It dynamically restricts input to two digits and adjusts the cursor position, creating a seamless and user-friendly editing experience. Event listeners tied to the DOMContentLoaded event apply this validation logic to editable elements, enhancing usability and preventing invalid input.</p>
+                <div class="repository-link">
+                    <a href="https://github.com/Jorvor37/2024-08-26-countdownTimer" target="_blank">Visit Repository</a>
+                </div>
+            </li>
+        </ul>
+
+        
+
+        <!-- Back Button -->
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="back-button">Back to Home</a>
+        </div>
+    </main>
+</body>
+
+</html>
