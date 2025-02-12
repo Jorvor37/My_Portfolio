@@ -284,3 +284,34 @@ footer {
     z-index: 1;
 }
 
+/* view full description of code*/
+.view-project {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--accent-green);
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border: 2px solid var(--accent-green);
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(100, 255, 218, 0.3);
+}
+
+/* Hover Effect */
+.view-project:hover {
+    background-color: var(--accent-green);
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.7);
+    transform: translateY(-3px);
+}
+
+/* Click Effect */
+.view-project:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 8px rgba(100, 255, 218, 0.5);
+}
