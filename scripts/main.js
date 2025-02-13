@@ -72,6 +72,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Resume download
+    const resumeButton = document.querySelector('.resume-button');
+    const resumeFileURL = '../resume/KongphopRESUME.pdf';
+
+    resumeButton.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const downloadLink = document.createElement('a');
+        downloadLink.href = resumeFileURL;
+        downloadLink.download = 'KongphopResume.pdf';
+        document.body.appendChild(downloadLink);
+
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+
+        showNotification('Resume downloaded');
+    })
+
     // Show notification function
     function showNotification(message) {
         const notification = document.getElementById('notification');
