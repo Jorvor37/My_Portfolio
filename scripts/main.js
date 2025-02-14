@@ -101,4 +101,41 @@ document.addEventListener('DOMContentLoaded', () => {
             notification.classList.remove('show');
         }, 3000);
     }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        console.log("Script Loaded!"); // Debugging log
+      
+        // Create the highlight element
+        let highlight = document.createElement("div");
+        highlight.classList.add("cursor-highlight");
+        document.body.appendChild(highlight);
+      
+        // Cursor position variables
+        let posX = 0, posY = 0;
+        let targetX = 0, targetY = 0;
+        const speed = 0.2; // Adjust for responsiveness (higher = faster)
+      
+        document.addEventListener("mousemove", (event) => {
+          targetX = event.clientX;
+          targetY = event.clientY;
+        });
+      
+        function animateCursor() {
+          posX += (targetX - posX) * speed;
+          posY += (targetY - posY) * speed;
+      
+          highlight.style.transform = `translate(${posX - 15}px, ${posY - 15}px)`;
+          
+          requestAnimationFrame(animateCursor);
+        }
+      
+        // Ensure animation starts after mouse moves
+        document.addEventListener("mousemove", () => {
+          if (!highlight.dataset.started) {
+            console.log("Mouse detected, starting animation...");
+            highlight.dataset.started = "true";
+            animateCursor();
+          }
+        }, { once: true });
+      });
 });
